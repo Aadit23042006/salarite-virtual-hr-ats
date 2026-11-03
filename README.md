@@ -1,53 +1,81 @@
 # Salarite Virtual HR & ATS
 
-A Virtual HR + Applicant Tracking System (ATS) prototype built for the Salarite internship assignment.
+A full-stack Virtual HR and Applicant Tracking System (ATS) prototype developed for the **Salarite Internship Assignment**.
 
-## Project Overview
-
-This project demonstrates the core Virtual HR and ATS workflow:
-
-1. Employer assigns tasks to Virtual HR.
-2. Virtual HR views assigned tasks.
-3. Virtual HR updates task status and progress.
-4. Employer monitors task activity through the dashboard.
-5. Task changes become visible automatically through dashboard refresh.
-6. Employer schedules candidate interviews.
-7. Interview modes include Voice, Video, and Chat calling placeholders.
-
-The project is built as a lightweight full-stack application using FastAPI, React, and SQLite.
+The application enables employers to assign tasks to Virtual HR, monitor task progress, and schedule candidate interviews through Voice, Video, and Chat calling placeholders.
 
 ---
 
-## Tech Stack
+## 🚀 Live Demo & Submission Links
 
-* **Backend:** Python + FastAPI
-* **Frontend:** React + Vite
-* **Database:** SQLite
-* **API:** REST API
-* **Real-time visibility:** Automatic dashboard refresh
-* **Deployment:** Render / Railway compatible
+| Resource                      | Link                                                                               |
+| ----------------------------- | ---------------------------------------------------------------------------------- |
+| **Live Application**          | https://salarite-virtual-hr-ui.onrender.com                                        |
+| **GitHub Repository**         | https://github.com/Aadit23042006/salarite-virtual-hr-ats                           |
+| **Backend API**               | https://salarite-virtual-hr-api.onrender.com                                       |
+| **Swagger API Documentation** | https://salarite-virtual-hr-api.onrender.com/docs                                  |
+| **Walkthrough Video**         | https://drive.google.com/file/d/1LeBpPCHWF9Fw9lnAU1U_-XHMpUeW4tk4/view?usp=sharing |
+
+**Deployment Status:** Backend and frontend deployed on Render.
+
+> Note: Render free services may take some time to respond after a period of inactivity.
 
 ---
 
-## Main Features
+## 1. Project Overview
 
-### Employer
+Salarite Virtual HR & ATS demonstrates the essential workflow of a Virtual HR platform.
+
+### Core Workflow
+
+1. Employer logs into the application.
+2. Employer creates and assigns tasks to Virtual HR.
+3. Virtual HR views assigned tasks.
+4. Virtual HR updates task status and completion progress.
+5. Employer monitors task activity through the dashboard.
+6. Changes become visible automatically through dashboard refresh.
+7. Employer schedules candidate interviews.
+8. Interview modes include Voice, Video, and Chat calling placeholders.
+
+The application is built using Python, FastAPI, React, and SQLite.
+
+---
+
+## 2. Tech Stack
+
+| Component            | Technology                            |
+| -------------------- | ------------------------------------- |
+| Backend              | Python                                |
+| Backend Framework    | FastAPI                               |
+| Frontend             | React                                 |
+| Frontend Build Tool  | Vite                                  |
+| Programming Language | JavaScript / JSX                      |
+| Database             | SQLite                                |
+| ORM                  | SQLAlchemy                            |
+| API Architecture     | REST API                              |
+| Real-Time Visibility | Automatic refresh (5-second interval) |
+| Styling              | CSS                                   |
+| Deployment           | Render                                |
+
+---
+
+## 3. Main Features
+
+### Employer Dashboard
 
 * Employer login
-* Employer dashboard
-* Create tasks
+* Dashboard overview
+* Create and assign tasks
 * Assign tasks to Virtual HR
-* View task status
-* View task progress
+* View all tasks
+* Monitor task status
+* Monitor task completion progress
+* View completed tasks
 * Monitor Virtual HR activity
 * Schedule candidate interviews
-* Select interview mode:
+* Select interview mode
 
-  * Voice
-  * Video
-  * Chat
-
-### Virtual HR
+### Virtual HR Dashboard
 
 * Virtual HR login
 * View assigned tasks
@@ -55,25 +83,48 @@ The project is built as a lightweight full-stack application using FastAPI, Reac
 * Update task status
 * Update task progress
 * Mark tasks as completed
+* View scheduled interviews
+
+### Task Management
+
+* Task creation
+* Task assignment
+* Task descriptions
+* Task priority
+* Task due dates
+* Progress tracking
+* Status management
+
+Supported task statuses include:
+
+* Pending
+* In Progress
+* Completed
 
 ### Interview Scheduling
 
 * Candidate name
 * Job position
-* Interview date
-* Interview time
+* Interview date and time
 * Interview mode
 * Interview notes
 * Scheduled interview list
-* Voice calling placeholder
-* Video calling placeholder
-* Chat calling placeholder
+
+Available interview modes:
+
+* Voice
+* Video
+* Chat
+
+The calling options are implemented as in-built calling placeholders for the internship prototype; they do not represent a full external telephony or video-conferencing integration.
 
 ---
 
-# Demo Credentials
+## 4. Demo Credentials
 
-## Employer Account
+Use the following credentials to access the live application.
+
+### Employer Account
 
 **Email**
 
@@ -87,7 +138,7 @@ employer@salarite.demo
 demo123
 ```
 
-## Virtual HR Account
+### Virtual HR Account
 
 **Email**
 
@@ -101,33 +152,14 @@ hr@salarite.demo
 demo123
 ```
 
----
+**Live Application:**
+https://salarite-virtual-hr-ui.onrender.com
 
-# Live Demo
-
-The live demo URL will be added after deployment.
-
-**Live Demo:**
-
-```text
-ADD_FINAL_LIVE_DEMO_URL_HERE
-```
+> These are demonstration credentials for the internship prototype. Do not use them for real or sensitive accounts.
 
 ---
 
-# GitHub Repository
-
-The GitHub repository URL will be added after the repository is created.
-
-**GitHub Repository:**
-
-```text
-ADD_FINAL_GITHUB_REPOSITORY_URL_HERE
-```
-
----
-
-# Project Structure
+## 5. Project Structure
 
 ```text
 salarite-virtual-hr/
@@ -153,58 +185,62 @@ salarite-virtual-hr/
 │       ├── main.jsx
 │       └── styles.css
 │
-├── salarite.db
 ├── render.yaml
 ├── RUN_PROJECT_WINDOWS.bat
 ├── README.md
 └── .gitignore
 ```
 
+The SQLite database is created and managed by the backend. A local database file may also be present depending on the development environment.
+
 ---
 
-# Local Setup
+## 6. Local Setup Instructions
 
-## Prerequisites
+### Prerequisites
 
-Install the following:
+Install:
 
-* Python 3.10+
-* Node.js 18+
+* Python 3.10 or newer
+* Node.js 18 or newer
 * npm
 * Git
 
----
-
-## 1. Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd salarite-virtual-hr
+git clone https://github.com/Aadit23042006/salarite-virtual-hr-ats.git
 ```
 
----
+Navigate to the project directory:
 
-# 2. Backend Setup
+```bash
+cd salarite-virtual-hr-ats
+```
 
-Open a terminal in the project directory.
+### Step 2: Backend Setup
+
+Open a terminal in the project root.
+
+Navigate to the backend:
 
 ```bat
 cd backend
 ```
 
-Create a Python virtual environment:
+Create a virtual environment:
 
 ```bat
 python -m venv .venv
 ```
 
-Activate it:
+Activate the environment:
 
 ```bat
 .venv\Scripts\activate
 ```
 
-Install backend dependencies:
+Install dependencies:
 
 ```bat
 pip install -r requirements.txt
@@ -222,19 +258,23 @@ Backend URL:
 http://localhost:8000
 ```
 
-FastAPI documentation:
+Swagger API Documentation:
 
 ```text
 http://localhost:8000/docs
 ```
 
----
+Backend health check:
 
-# 3. Frontend Setup
+```text
+http://localhost:8000/api/health
+```
 
-Open a **second terminal**.
+### Step 3: Frontend Setup
 
-From the project root:
+Open a second terminal.
+
+Navigate to the frontend directory from the project root:
 
 ```bat
 cd frontend
@@ -246,7 +286,7 @@ Install dependencies:
 npm install
 ```
 
-Start the React/Vite frontend:
+Start the React development server:
 
 ```bat
 npm run dev
@@ -258,11 +298,9 @@ Frontend URL:
 http://localhost:5173
 ```
 
-The Vite development server proxies `/api` requests to the FastAPI backend.
+The Vite development server proxies API requests to the FastAPI backend.
 
----
-
-# 4. Login
+### Step 4: Login
 
 Open:
 
@@ -270,16 +308,16 @@ Open:
 http://localhost:5173
 ```
 
-Use the demo credentials provided above.
+Select the appropriate role and use the demo credentials.
 
-### Employer
+**Employer**
 
 ```text
 Email: employer@salarite.demo
 Password: demo123
 ```
 
-### Virtual HR
+**Virtual HR**
 
 ```text
 Email: hr@salarite.demo
@@ -288,313 +326,407 @@ Password: demo123
 
 ---
 
-# 5. Recommended Demo Workflow
+## 7. Recommended Demonstration Workflow
 
-The recommended demonstration sequence is:
-
-```text
-Employer Login
-       ↓
-Employer Dashboard
-       ↓
-Create Task
-       ↓
-Assign Task to Virtual HR
-       ↓
-Virtual HR Login
-       ↓
-View Assigned Task
-       ↓
-Update Progress to 50%
-       ↓
-Set Status to In Progress
-       ↓
-Employer Dashboard
-       ↓
-Employer Sees Updated Progress Automatically
-       ↓
-Virtual HR Updates Progress to 100%
-       ↓
-Set Status to Completed
-       ↓
-Employer Verifies Completed Task
-       ↓
-Schedule Candidate Interview
-       ↓
-Select Interview Mode
-       ↓
-Voice / Video / Chat Placeholder
-```
-
----
-
-# 6. API Endpoints
-
-## Health
-
-```http
-GET /api/health
-```
-
-## Authentication
-
-```http
-POST /api/auth/login
-```
-
-## Users
-
-```http
-GET /api/users
-```
-
-## Tasks
-
-```http
-GET /api/tasks
-POST /api/tasks
-PATCH /api/tasks/{task_id}
-```
-
-## Dashboard
-
-```http
-GET /api/dashboard
-```
-
-## Interviews
-
-```http
-GET /api/interviews
-POST /api/interviews
-POST /api/interviews/{interview_id}/call
-```
-
----
-
-# 7. Interview Scheduling
-
-The application supports interview scheduling with:
-
-* Candidate name
-* Job position
-* Date
-* Time
-* Interview mode
-* Notes
-
-Available interview modes:
+Follow this sequence to demonstrate the complete ATS workflow.
 
 ```text
-Voice
-Video
-Chat
+                 EMPLOYER LOGIN
+                       |
+                       v
+                EMPLOYER DASHBOARD
+                       |
+                       v
+                  CREATE TASK
+                       |
+                       v
+              ASSIGN TASK TO VIRTUAL HR
+                       |
+                       v
+                 VIRTUAL HR LOGIN
+                       |
+                       v
+                VIEW ASSIGNED TASK
+                       |
+                       v
+              UPDATE PROGRESS TO 50%
+                       |
+                       v
+                STATUS: IN PROGRESS
+                       |
+                       v
+               EMPLOYER DASHBOARD
+                       |
+                       v
+             VERIFY AUTOMATIC UPDATE
+                       |
+                       v
+             UPDATE PROGRESS TO 100%
+                       |
+                       v
+                STATUS: COMPLETED
+                       |
+                       v
+              EMPLOYER VERIFICATION
+                       |
+                       v
+              SCHEDULE CANDIDATE
+                    INTERVIEW
+                       |
+                       v
+             SELECT INTERVIEW MODE
+                       |
+                       v
+              VOICE / VIDEO / CHAT
 ```
-
-The calling buttons are implemented as in-built calling placeholders for the internship prototype.
 
 ---
 
-# 8. Testing Completed
+## 8. API Endpoints
 
-The core assignment workflow has been tested locally.
+The backend exposes REST API endpoints through FastAPI.
+
+### General
+
+| Method | Endpoint      | Purpose              |
+| ------ | ------------- | -------------------- |
+| GET    | `/`           | Root endpoint        |
+| GET    | `/api`        | API information      |
+| GET    | `/api/health` | Backend health check |
 
 ### Authentication
 
-* Employer login verified
-* Virtual HR login verified
+| Method | Endpoint          | Purpose    |
+| ------ | ----------------- | ---------- |
+| POST   | `/api/auth/login` | User login |
+
+### Users
+
+| Method | Endpoint     | Purpose        |
+| ------ | ------------ | -------------- |
+| GET    | `/api/users` | Retrieve users |
+
+### Tasks
+
+| Method | Endpoint               | Purpose                          |
+| ------ | ---------------------- | -------------------------------- |
+| GET    | `/api/tasks`           | Retrieve tasks                   |
+| POST   | `/api/tasks`           | Create a task                    |
+| PATCH  | `/api/tasks/{task_id}` | Update task details and progress |
+
+### Dashboard
+
+| Method | Endpoint         | Purpose                        |
+| ------ | ---------------- | ------------------------------ |
+| GET    | `/api/dashboard` | Retrieve dashboard information |
+
+### Interviews
+
+| Method | Endpoint                              | Purpose                              |
+| ------ | ------------------------------------- | ------------------------------------ |
+| GET    | `/api/interviews`                     | Retrieve scheduled interviews        |
+| POST   | `/api/interviews`                     | Schedule an interview                |
+| POST   | `/api/interviews/{interview_id}/call` | Handle interview calling placeholder |
+
+### Interactive API Documentation
+
+Local:
+
+http://localhost:8000/docs
+
+Production:
+
+https://salarite-virtual-hr-api.onrender.com/docs
+
+---
+
+## 9. Interview Scheduling
+
+The interview module allows employers to schedule candidate interviews.
+
+### Interview Information
+
+* Candidate name
+* Job position
+* Interview date
+* Interview time
+* Interview mode
+* Interview notes
+
+### Available Modes
+
+```text
+1. Voice
+2. Video
+3. Chat
+```
+
+The application includes calling placeholders to demonstrate the interview workflow.
+
+---
+
+## 10. Testing & Verification
+
+The project has been tested locally and through the deployed Render application.
+
+### Authentication
+
+* Employer login verified.
+* Virtual HR login verified.
+* Both dashboards opened successfully.
 
 ### Task Management
 
-* Employer task creation verified
-* Task assignment verified
-* Virtual HR task visibility verified
-* Task status update verified
-* Task progress update verified
-* 50% progress workflow verified
-* 100% progress workflow verified
-* Completed status verified
+* Employer task creation verified.
+* Task assignment verified.
+* Virtual HR task visibility verified.
+* Task status updates verified.
+* Task progress updates verified.
+* 50% progress and In Progress workflow verified.
+* 100% progress and Completed workflow verified.
 
 ### Employer Monitoring
 
-* Employer dashboard monitoring verified
-* Automatic dashboard refresh verified
-* Virtual HR changes visible to Employer verified
+* Employer dashboard verified.
+* Automatic dashboard refresh verified.
+* Virtual HR updates visible to Employer verified.
 
 ### Interview Scheduling
 
-* Candidate interview scheduling verified
-* Voice calling placeholder verified
-* Video calling placeholder verified
-* Chat calling placeholder verified
+* Candidate interview scheduling verified.
+* Voice mode option verified.
+* Video mode option verified.
+* Chat mode option verified.
+* Scheduled interview visibility verified.
 
 ### Database
 
-* SQLite persistence verified
-* Task persistence verified
-* Interview persistence verified
-* Backend restart persistence verified
+* SQLite persistence tested locally.
+* Task persistence tested locally.
+* Interview persistence tested locally.
+* Backend restart persistence tested locally.
+
+### Deployment
+
+* Backend deployment on Render verified.
+* Frontend deployment on Render verified.
+* Live application access verified.
+* Production API health check verified.
+* Employer dashboard verified.
+* Virtual HR dashboard verified.
 
 ### End-to-End Workflow
 
 ```text
 Employer
-   ↓
+   |
+   v
 Assign Task
-   ↓
+   |
+   v
 Virtual HR
-   ↓
+   |
+   v
 Update Progress
-   ↓
+   |
+   v
 Employer Live Monitoring
-   ↓
+   |
+   v
 Complete Task
-   ↓
+   |
+   v
 Employer Verification
-   ↓
-Interview Scheduling
+   |
+   v
+Schedule Interview
+   |
+   v
+Voice / Video / Chat
 ```
 
-The complete workflow was tested successfully in the local environment.
+The core assignment workflow was successfully tested.
 
 ---
 
-# 9. Quick Windows Start
+## 11. Quick Windows Startup
 
-The repository includes:
+The repository includes Windows startup scripts.
+
+### Main Startup Script
 
 ```text
 RUN_PROJECT_WINDOWS.bat
 ```
 
-Backend startup script:
+### Backend Startup Script
 
 ```text
 backend/start_backend.bat
 ```
 
-Frontend startup script:
+### Frontend Startup Script
 
 ```text
 frontend/start_frontend.bat
 ```
 
-These can be used to simplify local startup on Windows.
+These scripts simplify local project startup on Windows.
 
 ---
 
-# 10. Deployment
+## 12. Deployment
 
-The project contains:
+The project includes a Render deployment configuration:
 
 ```text
 render.yaml
 ```
 
-for deployment configuration.
+### Deployment Architecture
 
-Recommended deployment process:
+```text
+             USER / BROWSER
+                    |
+                    v
+             REACT FRONTEND
+                    |
+                    v
+              REST API
+                    |
+                    v
+             FASTAPI BACKEND
+                    |
+                    v
+              SQLITE DATABASE
+```
 
-1. Push the project to GitHub.
-2. Create a Render or Railway service.
-3. Connect the GitHub repository.
-4. Configure the required environment variables if needed.
-5. Deploy the backend.
-6. Deploy the frontend.
-7. Verify the live application.
-8. Test login.
-9. Test task assignment.
-10. Test Virtual HR progress updates.
-11. Test Employer monitoring.
-12. Test interview scheduling.
-13. Add the final Live Demo URL to this README.
+### Live Deployment
+
+**Frontend:**
+
+https://salarite-virtual-hr-ui.onrender.com
+
+**Backend:**
+
+https://salarite-virtual-hr-api.onrender.com
+
+**API Documentation:**
+
+https://salarite-virtual-hr-api.onrender.com/docs
+
+### Deployment Notes
+
+* The frontend is deployed as a Render Static Site.
+* The backend is deployed as a Render Web Service.
+* The frontend communicates with the backend through REST API requests.
+* Render free services may spin down after inactivity.
+* The SQLite database is suitable for this assignment prototype. The free Render filesystem is ephemeral, so database data should not be treated as permanently durable across service replacement or redeployment. A persistent database service is recommended for production.
 
 ---
 
-# 11. Submission Deliverables
+## 13. Assignment Requirement Alignment
 
-## Mandatory
+The project addresses the requirements of the Salarite Virtual HR internship assignment.
 
-### 1. Live Demo Link
+| Company Requirement             | Implementation    |
+| ------------------------------- | ----------------- |
+| Employer task assignment screen | Implemented       |
+| Virtual HR task update screen   | Implemented       |
+| Basic task list                 | Implemented       |
+| Task status changes             | Implemented       |
+| Interview scheduling            | Implemented       |
+| Voice calling placeholder       | Implemented       |
+| Video calling placeholder       | Implemented       |
+| Chat calling placeholder        | Implemented       |
+| Employer task monitoring        | Implemented       |
+| Automatic progress visibility   | Implemented       |
+| Python backend                  | FastAPI           |
+| React dashboard                 | React + Vite      |
+| Database                        | SQLite            |
+| Real-time visibility            | Automatic refresh |
+| Deployment                      | Render            |
 
-```text
-https://drive.google.com/file/d/1LeBpPCHWF9Fw9lnAU1U_-XHMpUeW4tk4/view?usp=sharing
-```
+---
 
-### 2. GitHub Repository
+## 14. Submission Deliverables
 
-```text
+### Mandatory Deliverables
+
+**1. Live Demo**
+
+https://salarite-virtual-hr-ui.onrender.com
+
+**2. GitHub Repository**
+
 https://github.com/Aadit23042006/salarite-virtual-hr-ats
-```
 
-### 3. README
+**3. README**
 
-This README contains:
+This document includes:
 
 * Project overview
 * Technology stack
-* Setup instructions
+* Features
 * Demo credentials
 * Project structure
-* API information
-* Demo workflow
+* Local setup instructions
+* API documentation
 * Testing information
 * Deployment information
 
-## Optional
+### Walkthrough Video
 
-### 4. 2-Minute Walkthrough Video
+**Video Link:**
 
-A short walkthrough video can demonstrate:
+https://drive.google.com/file/d/1LeBpPCHWF9Fw9lnAU1U_-XHMpUeW4tk4/view?usp=sharing
 
-```text
-Employer Login
-      ↓
-Create / Assign Task
-      ↓
-Virtual HR Login
-      ↓
-Update Task Progress
-      ↓
-Employer Live Monitoring
-      ↓
-Complete Task
-      ↓
-Schedule Interview
-      ↓
-Voice / Video / Chat Placeholder
-```
+The walkthrough demonstrates the application workflow, including:
 
----
-
-# 12. Assignment Requirement Alignment
-
-The project implements the required intern-version workflow:
-
-* Employer task assignment screen
-* Virtual HR task update screen
-* Basic task list
-* Task status changes
+* Employer dashboard
+* Task creation and assignment
+* Virtual HR task execution
+* Progress updates
+* Employer monitoring
 * Interview scheduling
-* In-built calling placeholders
-* Employer visibility into task progress
-* SQLite database
-* React dashboard
-* FastAPI backend
-* Automatic refresh for live task visibility
+* Voice, Video, and Chat options
 
 ---
 
-# 13. Security Notes
+## 15. Security Notes
 
-Do not commit real credentials, API keys, tokens, private keys, or `.env` files to GitHub.
-
-The demo credentials in this README are demonstration credentials for the internship assignment.
+* Do not commit real passwords, API keys, access tokens, private keys, or `.env` files to GitHub.
+* The credentials in this README are demonstration credentials.
+* Use proper authentication, authorization, secure secrets management, and persistent database infrastructure before production use.
 
 ---
 
-# 14. Author
+## 16. Future Improvements
+
+Potential improvements for a production-ready version include:
+
+* WebSocket-based real-time updates.
+* Advanced employer and HR role-based access control.
+* Candidate management and application tracking.
+* Email notifications.
+* Calendar integration.
+* Actual Voice and Video calling integration.
+* Persistent production database.
+* Advanced reporting and analytics.
+* Audit logs and activity history.
+
+---
+
+## 17. Author
 
 **Aadit Choudhary**
 
-Salarite Virtual HR & ATS — Internship Assignment
+**Project:** Salarite Virtual HR & ATS
+**Purpose:** Salarite Internship Assignment
+**Backend:** Python + FastAPI
+**Frontend:** React + Vite
+**Database:** SQLite
+
+---
+
+**Salarite Virtual HR & ATS — Employer Task Management, Virtual HR Execution, and Interview Scheduling.**
