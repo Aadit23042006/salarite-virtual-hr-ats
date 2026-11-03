@@ -151,3 +151,6 @@ $RECYCLE.BIN/
 # ------------------------------------------------------------
 *.local
 *.local.*
+
+# Local duplicate SQLite database
+/salarite.db
