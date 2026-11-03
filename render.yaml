@@ -10,8 +10,9 @@ services:
       - key: DATABASE_URL
         value: sqlite:///./salarite.db
 
-  - type: static
+  - type: web
     name: salarite-virtual-hr-ui
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
