@@ -1,0 +1,153 @@
+# ============================================================
+# Salarite Virtual HR & ATS - Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Python test / coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.pyre/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+
+# Ruff / lint / formatter caches
+.ruff_cache/
+.mypy_cache/
+
+# ------------------------------------------------------------
+# Environment files / Secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# Certificates / private keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ------------------------------------------------------------
+# Node.js / React / Vite
+# ------------------------------------------------------------
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Vite
+.vite/
+
+# Frontend caches
+.cache/
+.parcel-cache/
+.turbo/
+
+# ------------------------------------------------------------
+# SQLite temporary files
+# ------------------------------------------------------------
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+*.log
+logs/
+
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# IDE / Editors
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+
+# Visual Studio
+.vs/
+
+# ------------------------------------------------------------
+# Operating System
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------
+# Jupyter Notebook
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# Local development files
+# ------------------------------------------------------------
+*.local
+*.local.*
